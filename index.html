@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="aliner-al-centro">Formulario</h1>
+      <p class="description aliner-al-centro" id="description">Gracias por ayudar con la mejora de la plataforma</p>
+    </header>
+    <form id="survey-form">
+      <div id="name" class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter your Name" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter you Email" class="form-control">
+      </div>
+      <div class="form-group">
+        <label  for="number" id="number-label">Age <span>(optional)</span></label>
+        <input type="number" name="age" id="number" min="10" max="70" placeholder="Age" class="form-control">
+      </div>
+      <div class="form-group">
+        <p>Cual de los roles desenpeñas</p>
+        <select id="dropdown" class="form-control">
+          <option disabled selected>Seleciona una opcion</option>
+          <option>Estudiante</option>
+          <option>Egresado</option>
+          <option>Bachiller</option>
+          <option>Ingeniero</option>
+          <option>Doctorado</option>
+          <option>Tecnico</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Cuales son tus cursos Favoritos <span>Selecione opciones</span></p>
+        <label><input type="radio" name="prefer" value="Kubenetes" class="input-radio">Kubernetes K8S</label>
+        <label><input type="radio" name="prefer" valur="Docker" class="input-radio">Docker</label>
+        <label><input type="radio" name="prefer" value="Terraform" class="input-radio">Terraform</label>
+        <label><input type="radio" name="prefer" value="Ansible" class="input-radio">Ansible</label>
+        <label><input type="radio" name="prefer" value="Jenkins" class="input-radio">Jenkins</label>
+        <label><input type="radio" name="prefer" value="Kubenetes" class="input-radio">Kubernetes K8S</label>
+        <label><input type="radio" name="prefer" valur="Docker" class="input-radio">Docker</label>
+      </div>
+      <div class="form-group">
+        <p>Comentarios o sugerancias</p>
+        <textarea id="textarea" minlength="10" maxlength="1000" class="input-area"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="boton">submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
